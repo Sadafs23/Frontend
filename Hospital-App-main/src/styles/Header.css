@@ -1,0 +1,103 @@
+/* .header {
+    background: lightslategray;
+    color: white;
+    text-align: space-evenly;
+    padding: 20px;
+}
+
+.header nav {
+    margin-top: 8px;
+    text-align: right;
+    margin-right: 150px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.title{
+    text-align: left;
+} */
+.header {
+    background: #2a3d4f; /* Dark blue shade */
+    color: #f1f1f1; /* Light grey for text */
+    padding: 20px 30px; /* Added extra padding for better spacing */
+    display: flex;
+    justify-content: space-between; /* Space between header elements */
+    align-items: center; /* Vertically center the content */
+    box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+    height: 120px;
+}
+
+/* Header Title Styling */
+.header h1 {
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+    font-size: 2.5em; /* Bigger title for more impact */
+    letter-spacing: 2px; /* Slightly spaced out letters */
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation Styling */
+.header nav {
+    display: flex;
+    justify-content: flex-end; /* Align nav links to the right */
+}
+
+.header nav a {
+    margin: 0 20px;
+    color: lightskyblue; /* Vibrant coral color */
+    text-decoration: none;
+    font-size: 1.1em; /* Slightly larger text for readability */
+    font-weight: bold; /* Make links stand out */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effects for Links */
+.header nav a:hover {
+    color: #fff; /* Change text color on hover */
+    text-decoration: underline;
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack the content vertically on small screens */
+        text-align: center; /* Center align the text */
+    }
+
+    .header h1 {
+        font-size: 2em; /* Slightly smaller font size for mobile */
+        margin-bottom: 15px; /* Add space below the title */
+    }
+
+    .header nav {
+        margin-top: 10px; /* Add some space above the nav */
+    }
+
+    .header nav a {
+        margin: 10px 15px; /* Adjust margins for mobile */
+        font-size: 1em; /* Reduce font size for better mobile readability */
+    }
+}
+
+/* Responsive Design for Very Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.8em; /* Reduce font size further for very small screens */
+    }
+
+    .header nav a {
+        margin: 10px 12px; /* Tighter margins for small screens */
+        font-size: 0.95em; /* Slightly smaller font size */
+    }
+}
+    

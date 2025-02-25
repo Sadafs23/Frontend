@@ -1,0 +1,90 @@
+/* Home Container */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #1a1a2e, #16213e); /* Professional dark blue gradient */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Welcome Title */
+.welcome-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Welcome Message */
+.welcome-message {
+    font-size: 1.4rem;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #d1d1d1;
+    margin-bottom: 40px;
+}
+
+/* Button Container */
+.animation-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Buttons */
+/* Buttons */
+.animated-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly white transparent background */
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    width: 280px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Hover Effect */
+.animated-box:hover {
+    background: rgba(255, 255, 255, 0.2); /* Lighter white shade on hover */
+    color: white;
+    transform: translateY(-4px);
+    border-color: #ff6a00;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome-title {
+        font-size: 2.5rem;
+    }
+    
+    .welcome-message {
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+
+    .animated-box {
+        width: 240px;
+        height: 90px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .animated-box {
+        width: 200px;
+        height: 80px;
+        font-size: 1.1rem;
+    }
+}
